@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-EVENTS</title>
+</head>
+<body>
+    <video src="ASSETS/MEDIA/Best-Puneeth-Rajkumar-Whatsapp-Status-Video.mp4" height="200" id="videofile"></video>
+    <hr>
+    <button onclick="playhandler()">Play</button>
+    <button onclick="pausehandler()">Pause</button>
+    <button onclick="fullscreen()">Fullscreen</button>
+    <script>
+        function playhandler(){
+            document.getElementById("videofile").play();
+        }
+        function pausehandler(){
+            document.getElementById("videofile").pause();
+        }
+        function fullscreen(){
+            document.getElementById("videofile").requestFullscreen();
+        }
+    </script>
+</body>
+</html>

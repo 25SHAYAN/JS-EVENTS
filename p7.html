@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-EVENTS</title>
+</head>
+<body>
+    <center>
+        <h1>Media Events</h1>
+    </center>
+    <hr>
+    <h3 id="msg"></h3>
+    <video src="ASSETS/MEDIA/Best-Puneeth-Rajkumar-Whatsapp-Status-Video.mp4" height="200"  width="50%" controls onplay="playvideo()" onpause="pausevideo()"
+    onvolumechange="vol()" onseeking="seek()"></video>
+    <script>
+        var msg = document.getElementById("msg");
+        function playvideo(){
+            msg.innerHTML = "startred playing video";
+            msg.style.color="green";
+        }
+        function pausevideo(){
+            msg.innerHTML = "video paused";
+            msg.style.color="oranged";
+        }
+        function vol(){
+            msg.innerHTML = "changing volume";
+         msg.style.color="deepskyblue";
+        }
+        function seek(){
+            msg.innerHTML = "video timing is changing";
+         msg.style.color="deeppink";
+        }
+    </script>
+</body>
+</html>

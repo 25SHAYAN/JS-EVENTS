@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-EVENT</title>
+    <style>
+      div{
+        background-color: teal;
+        color: #fff;
+        padding: 12px;
+        width: 50%;
+        height: 500px;
+        overflow: auto;/* used to create a scroll bar*/
+      }
+      h4{
+        padding: 10px;
+        background-color: crimson;
+        color: #fff;
+      }
+    </style>
+</head>
+<body>
+    <h3>onmousewheel</h3>
+    <h4 id="output"></h4>
+    <div id="txt" onmousewheel="whellhundler()" onscroll="wheelhandler()">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab odit repudiandae, aspernatur quia repellat cumque?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab odit repudiandae, aspernatur quia repellat cumque? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, optio!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab odit repudiandae, aspernatur quia repellat cumque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur sunt itaque quaerat ducimus alias nulla totam in, iure minima excepturi! Aliquam illo nemo consectetur nulla beatae impedit ducimus quos exercitationem adipisci, illum iusto nam aperiam nisi aut! Aliquid odit earum voluptatibus quos expedita, eligendi laborum libero a voluptate officia illum, numquam tenetur inventore non nulla in accusamus rem molestiae consequatur quasi nemo aspernatur. Itaque tempora sint dicta natus quod in rem labore dolor perferendis nemo! Earum ea unde quidem, voluptatibus asperiores laborum blanditiis itaque architecto optio, dolorum eius aliquid accusantium incidunt quisquam modi consequuntur nemo minus ullam maxime porro consectetur?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab odit repudiandae, aspernatur quia repellat cumque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt maxime nostrum dicta sed minus maiores nemo eveniet odio eius expedita ut ea neque in, iure veniam officiis dolores. Reiciendis amet iure totam magni mollitia nemo recusandae ipsum, praesentium tenetur cum aliquam? Doloribus, non sequi! At, nam. Consectetur tempora tempore illo eaque voluptatum ab laborum nemo harum. Distinctio consequatur sunt tenetur voluptatem eius harum ab cupiditate laborum magnam vel sit, nostrum, magni labore dolores, doloremque libero mollitia! Eaque fugit mollitia ratione aut reprehenderit in minus maxime sunt distinctio! Blanditiis eligendi tempora corrupti assumenda atque. Cum praesentium rerum illo, ducimus suscipit nam impedit laborum soluta est perspiciatis quidem, placeat corrupti asperiores? Doloremque dolores iure inventore libero debitis eum saepe omnis, vel itaque dolorem molestias soluta eaque ipsam expedita est esse magnam, eos quas odit. Expedita facere nihil corrupti veritatis quae vero possimus doloremque vitae, excepturi ipsam nobis? Natus soluta adipisci quibusdam. Nulla, similique quaerat. Magni, veniam enim! Ad molestias aliquid, atque ut nam, debitis voluptatibus illum repellat laboriosam delectus voluptates ipsam ratione eligendi velit harum fuga ipsa ab quo quidem! Quae id recusandae, ipsum in dolor corporis amet ipsa quibusdam nobis quisquam modi officiis sapiente exercitationem culpa minima eius. Sunt, aut explicabo.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab odit repudiandae, aspernatur quia repellat cumque? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias tempora enim placeat eveniet magnam voluptates vel, non dolorum earum neque esse qui, aut, maiores harum consequatur provident praesentium facere suscipit modi temporibus. Quasi fugit beatae amet? Porro sed consectetur eos? Voluptatum inventore distinctio fugiat dolor nobis autem, saepe eveniet nesciunt.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab odit repudiandae, aspernatur quia repellat cumque? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur enim rerum magnam, in obcaecati doloribus tempore. Assumenda voluptatem facilis eaque quis, consequatur quisquam illum hic, architecto rem deleniti fugiat blanditiis vero deserunt quam.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab odit repudiandae, aspernatur quia repellat cumque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque autem eveniet repellendus, voluptate delectus minus iure illo doloribus, voluptatibus consequuntur, quidem enim ipsum temporibus laborum exercitationem eos magnam! Ullam vero eveniet molestias in doloremque unde eligendi, maxime voluptatem velit veniam, ea totam qui incidunt?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab odit repudiandae, aspernatur quia repellat cumque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque vel facere officia tempore deserunt alias aliquid voluptatum velit, dolor soluta ut earum cupiditate ducimus commodi tenetur nulla est neque, excepturi quod beatae mollitia omnis. Laborum similique, nesciunt deleniti placeat quibusdam incidunt sit amet alias, illo dignissimos doloremque nobis neque omnis perspiciatis labore debitis libero. Error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias ipsam magni, veritatis voluptatem quisquam voluptate. Ut distinctio vel commodi tempora debitis veniam illum cumque. Magni neque delectus similique, voluptate officiis dolores ipsum et. Ex reiciendis nam adipisci placeat! Eum a consectetur sed provident optio fugit consequatur saepe ex molestias debitis!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab odit repudiandae, aspernatur quia repellat cumque? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore iure, pariatur delectus saepe quisquam accusantium mollitia commodi fugiat! Delectus voluptate, error, magni assumenda dolorem ea eius veniam non aliquam pariatur distinctio deserunt inventore.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab odit repudiandae, aspernatur quia repellat cumque?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab odit repudiandae, aspernatur quia repellat cumque? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur omnis tenetur pariatur, maxime architecto quos quisquam. Consequuntur, quos accusantium nemo obcaecati repellat modi. Sit eos cum recusandae impedit eum ratione, saepe dolorum pariatur officiis culpa, hic ab dolores aliquid deleniti architecto ipsa minima sint nobis! Suscipit ea laboriosam repellat esse cumque debitis laudantium animi tempore natus ullam, facilis corporis, porro cum impedit nesciunt? Veniam, id possimus! Qui, quos. Doloribus labore, quo totam libero sit quam tempore, voluptatem dolor recusandae accusantium corrupti quidem possimus repellat voluptas ducimus vel sunt sapiente reiciendis beatae minima. Inventore, recusandae, earum in sapiente doloremque ipsum atque explicabo enim facilis cupiditate adipisci iusto ducimus, cum distinctio? Voluptates quia reiciendis corrupti pariatur modi magni, sit corporis repellat voluptas iure ea quae sunt inventore, sapiente, ratione quas ad. Pariatur ducimus voluptate natus soluta dolore eum aut iure! In similique blanditiis sint libero optio ex mollitia, a exercitationem vel illum! Soluta ducimus non veritatis deserunt quaerat nisi blanditiis fugit ex qui, rerum, autem voluptates eos reiciendis temporibus cumque nostrum aut, error dolorem incidunt? Mollitia qui rerum dolores cupiditate ut excepturi doloremque repellendus quasi ullam nisi quidem consequatur, aut accusamus consectetur eligendi explicabo aperiam nesciunt reiciendis, ipsum repellat perspiciatis numquam? Distinctio quod, pariatur, quam explicabo voluptas praesentium corrupti debitis omnis quidem aspernatur harum quae commodi! Eaque fugiat et </p>
+
+    <p>pnesciunt dolores neque harum laborum temporibus adipisci at consequatur tenetur earum dignissimos iure reprehenderit ipsa, rerum aliquid assumenda quod maiores rem perferendis nihil placeat quaerat! Dicta officiis animi ducimus dignissimos voluptatem aspernatur ratione sunt officia, commodi perferendis est quasi voluptatibus molestias nisi iure amet repellendus rerum accusantium cum, nemo hic? Temporibus adipisci reiciendis architecto earum consectetur, unde eum consequuntur iusto, est assumenda error ipsam qui dolorum ipsa iure porro fugit, blanditiis ratione? Magni cumque animi ea maiores exercitationem culpa in doloribus assumenda ipsum a necessitatibus, minus maxime amet incidunt facere repellat adipisci esse et nesciunt iste mollitia? Esse quaerat debitis ex ad veniam dolore? Repellat totam nobis blanditiis iste? Reprehenderit ut voluptatum dignissimos alias dolor at.</p>
+
+</div>
+<script>
+    function wheelhandler(){
+        let pos = document.getElementById("txt");
+        document.getElementById("output").innerHTML=pos.scrollTop + "px";//scrolltop shows the scroll amount in px
+    }
+</script>
+</body>
+</html>

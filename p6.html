@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-EVENT</title>
+</head>
+<body>
+    <h3>WRITE SOME CONTENT INSIDE INPUT AND THEN SELECT AND COPY IT</h3>
+
+    <form action="">
+        <label for="">ENTER SOME CONTENT</label>
+        <input type="text" name="first" id="first" onselect="sel()" oncopy="cop()">
+        <br><br>
+
+        <textarea name="" id="" cols="30" rows="10" onpaste="pas()" oncut="cut()"></textarea>
+    </form>
+    <script>
+        function sel(){
+            alert("onselect function works")
+        }
+        
+        function cop(){
+            alert("oncopy function works")
+        }
+        function pas(){
+            alert("onpaste function works")
+        }
+        function cut(){
+            alert("oncut function works,ready to paste")
+        }
+        
+    </script>
+</body>
+</html>

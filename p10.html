@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-EVENTS</title>
+</head>
+<body>
+    <center>
+        <h1>ONSUBMIT</h1>
+    </center>
+    <hr>
+
+    <h3 id="output"></h3>
+    <form onsubmit="subhandler(event)" onreset="resethandler()">
+        <label for="">USER NAME</label>
+        <input type="text" name="user" id="user">
+        <br><br>
+
+        <label for="pass">PASSWORD</label>
+        <input type="password" name="pass" id="pass">
+        <br><br
+        >
+        <button type="submit">Login</button>
+        <input type="reset" value="Reset" >
+        <br><br>
+    </form>
+    <script>
+        function subhandler(event){
+            event.preventDefault();//to avoid page refresh we use it
+            let user = document.getElementById("user").value;
+            let pass = document.getElementById("pass").value;
+
+            document.getElementById("output").innerText = `username=${user} and password =${pass}`;
+        }
+        function resethandler(){
+            alert(`form input is cleared`);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-EVENTS</title>
+</head>
+<body>
+    <center>
+        <h1>ONCHANGE EVENTS</h1>
+    </center>
+    <hr>
+    <h3 id="output"></h3>
+    <label for="">CHOOSE TECH</label>
+    <select name="tech" id="tech" onchange="selhundler()">
+    <option value="null">CHOOSE TECHNOLOGY</option>
+    <option value="html">HTML</option>
+    <option value="css">CSS</option>
+    <option value="js">JAVASCRIPT</option>
+    <option value="jquery">JQUERY</option>
+    </select>
+    <script>
+        function selhundler(){
+            let tech = document.getElementById("tech").value;
+            if (tech == "null") {
+            document.getElementById("output").innerHTML = "NO VALUE SELECTED";
+            } else {
+                document.getElementById("output").innerHTML = `VALUE SELECTED ${tech}`;
+            }
+        }
+    </script>
+</body>
+</html>
